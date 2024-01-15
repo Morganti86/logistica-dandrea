@@ -1,0 +1,27 @@
+.boxContainer {
+  margin: 25px 0;
+  width: 325px;
+}
+
+.image {
+  filter: grayscale(1);
+  height: auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.ul {
+  list-style: none;
+  padding: 5%;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.tick {
+  font-size: large;
+  color: transparent;
+  text-shadow: 0 0 0 #FF304D;
+  opacity: 0.8;
+}

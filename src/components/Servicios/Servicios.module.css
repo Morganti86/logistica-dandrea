@@ -1,0 +1,19 @@
+.servicio {
+  background: linear-gradient(
+    90deg,
+    rgb(22, 22, 25) 10%,
+    rgba(45, 46, 50, 1) 38%
+  );
+
+  padding: 5px 5%;
+  text-align: left;
+  color: ivory;
+  line-height: 30px;
+}
+
+.container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}

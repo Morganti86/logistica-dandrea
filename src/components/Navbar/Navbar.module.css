@@ -1,0 +1,116 @@
+.navbar {
+  background-color: #f2f2f2;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  padding: 5px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+
+.logo {
+  color: ivory;
+  text-decoration: none;
+}
+
+.logoImage {
+  height: 50px;
+  width: auto;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  position: relative;
+  gap: 1.5rem;
+}
+
+/* .navLinks li {
+  margin-right: 1rem;
+} */
+
+.navLinks a {
+  color: #2d2e32;
+  text-decoration: none;
+}
+
+.menuButton {
+  color: #2d2e32;
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.navLinks a {
+  position: relative;
+  text-decoration: none;
+  color: #2d2e32;
+  padding: 10px 5px;
+}
+
+.navLinks a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  width: 0;
+  height: 2px; /* Altura del subrayado */
+  background-color: #ff304d;
+  transition: width 0.8s ease-in-out, left 0.8s ease-in-out;
+}
+
+/* Estilo para el subrayado al pasar el ratón */
+.navLinks a:hover::after {
+  left: 15%;
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  /* .navbar {
+    height: 40px;
+  }
+
+  .logoImage {
+    height: 30px;
+  } */
+
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 25% 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    gap: 4rem;
+    background: linear-gradient(
+      90deg,
+      rgb(22, 22, 25) 10%,
+      rgba(45, 46, 50, 1) 38%
+    );
+    color: ivory;
+    z-index: 15;
+    transition: right 3s ease-in-out;
+    overflow: hidden;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .navLinks.show {
+    display: flex;
+  }
+
+  .navLinks.show a {
+    text-decoration: none;
+    color: #ff304d;
+    font-size: 1.5rem;
+  }
+}

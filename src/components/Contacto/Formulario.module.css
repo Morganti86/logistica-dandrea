@@ -1,0 +1,80 @@
+.formulario {
+  width: 49%;
+}
+
+.form {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  margin: 0;
+  border: solid 1px ivory;
+  font-size: 13px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.label {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 3%;
+}
+
+.title {
+  font-size: 15px;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 6px;
+  line-height: 30px;
+  padding-left: 5px;
+}
+
+.inputArea {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid gray;
+  border-radius: 6px;
+  width: 100%;
+  height: 150px;
+  resize: none;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.button {
+  width: 100px;
+  padding: 2% 0;
+  margin: 2% 0;
+  text-align: center;
+  border-radius: 15px;
+  border-width: 2px;
+  background-color: #FF2147;
+  border-color: black;
+  color: ivory;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button:hover {
+  border-color: ivory;
+  transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+  .formulario {
+    width: 100%;
+  }
+}

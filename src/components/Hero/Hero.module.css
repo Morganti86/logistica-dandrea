@@ -1,0 +1,65 @@
+.hero {
+  background-image: linear-gradient(rgba(180, 19, 43, 0.9), rgba(0, 0, 0, 0.8)),
+    url("/Company/Home.webp");
+  background-size: cover;
+  background-position: bottom right;
+  padding: 15% 5% 10%;
+}
+
+#Inicio {
+  scroll-margin-top: 0;
+}
+
+.container {
+  text-align: center;
+  color: ivory;
+  width: 100%;
+  letter-spacing: 1px;
+  text-wrap: balance;
+}
+
+.title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-wrap: balance;
+}
+
+.shadow {
+  text-shadow: 2px 2px grey;
+}
+
+.subTitleContainer {
+  min-height: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.subTitle {
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 2px 2px darkslategray;
+  padding: 8% 0;
+  text-wrap: pretty;
+}
+
+.phrase {
+  font-size: 15px;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(180, 19, 43, 0.9),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url("/Company/Home.webp");
+    background-size: cover;
+    background-position-x: 90%;
+    padding-top: 25%;
+  }
+}

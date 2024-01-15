@@ -1,0 +1,15 @@
+
+.slider {
+  margin: 50px auto;
+  line-height: 60px;
+  text-align: center;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 10%;
+  vertical-align: middle;
+  display: inline-block;
+}

@@ -1,0 +1,33 @@
+.empresa {
+  margin-bottom: 5%;
+}
+
+.empresa p {
+  max-width: 65%;
+}
+
+.wordcloud {
+  float: right;
+  margin-top: 2%;
+}
+
+
+
+@media (max-width: 1024px) {
+  .wordcloudImage {
+    width: 250px;
+    height: 333px;
+  }
+  .wordcloud {
+    margin-top: 15%;
+  }
+}
+
+@media (max-width: 700px) {
+  .empresa p {
+    max-width: 100%;
+  }
+  .wordcloudImage {
+    display: none;
+  }
+}

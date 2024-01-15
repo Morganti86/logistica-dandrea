@@ -1,0 +1,33 @@
+.datosContacto {
+  width: 49%;
+  height: 500px;
+  margin: 0;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactoBox {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.label {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.info {
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+  .datosContacto {
+    width: 100%;
+    margin-top: 30px;
+  }
+}

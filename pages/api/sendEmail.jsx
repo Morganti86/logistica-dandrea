@@ -21,7 +21,7 @@ export default async function handler(req, res) {
   try {
     const info = await transporter.sendMail({
       from: "Logisticadandrea@gmail.com",
-      to: "mmorganti86@gmail.com",
+      to: "mmorganti86@gmail.com, contacto@logisticadandrea.com.ar, beatriz@logisticadandrea.com.ar",
       // cc: "mafsobrero8@hotmail.com",
       subject: `Nuevo mensaje del formulario - ${email}`,
       text: `Nombre: ${name}\nEmail: ${email}\nTeléfono: ${tel}\nMensaje:\n${message}`,

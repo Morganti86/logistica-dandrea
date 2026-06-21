@@ -46,10 +46,10 @@ export function Clientes() {
 
   return (
     <section>
-      <p className="sectionTitle" id="Clientes">
+      <h2 className="sectionTitle" id="Clientes">
         Clientes
-      </p>
-      <h2 className="subTitle">Confían en nosotros</h2>
+      </h2>
+      <h3 className="subTitle">Confían en nosotros</h3>
       <section className={style.slider}>
         <Slider {...settings}>
           {CLIENTESLIST.map((cliente) => (
@@ -58,8 +58,8 @@ export function Clientes() {
               src={cliente.src}
               width={150}
               height={150}
-              alt={`${cliente.name} image`}
-              priority={true}
+              alt={`Logo de ${cliente.name}`}
+              sizes="(max-width: 500px) 45vw, 18vw"
             />
           ))}
         </Slider>

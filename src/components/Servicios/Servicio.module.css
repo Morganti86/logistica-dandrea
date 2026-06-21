@@ -19,9 +19,31 @@
   line-height: 25px;
 }
 
+.li {
+  margin-bottom: 4px;
+  cursor: default;
+}
+
 .tick {
   font-size: large;
   color: transparent;
-  text-shadow: 0 0 0 #FF304D;
+  text-shadow: 0 0 0 #ff304d;
   opacity: 0.8;
+}
+
+.tagDesc {
+  display: block;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.2s ease;
+  line-height: 1.4;
+  padding-left: 1.6em;
+}
+
+.li:hover .tagDesc {
+  max-height: 80px;
+  opacity: 1;
 }

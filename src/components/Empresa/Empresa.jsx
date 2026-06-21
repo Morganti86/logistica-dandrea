@@ -6,21 +6,24 @@ import Image from "next/image";
 export function Empresa() {
   return (
     <section className={style.empresa}>
-      <p className="sectionTitle" id="Empresa">
+      <h2 className="sectionTitle" id="Empresa">
         Empresa
-      </p>
-      <div className={style.wordcloud}>
-        <Image
-          className={style.wordcloudImage}
-          src="/Company/wordcloud.webp"
-          width={325}
-          height={433}
-          alt={`wordcloud image`}
-          priority={true}
-        />
+      </h2>
+      <div className={style.empresaContent}>
+        <div className={style.textContent}>
+          <Nosotros />
+          <Valores />
+        </div>
+        <div className={style.wordcloud}>
+          <Image
+            className={style.wordcloudImage}
+            src="/Company/wordcloud.webp"
+            width={325}
+            height={433}
+            alt="Nube de palabras con valores de la empresa"
+          />
+        </div>
       </div>
-      <Nosotros />
-      <Valores />
     </section>
   );
 }

@@ -5,10 +5,10 @@ import style from "./Servicios.module.css"
 export function Servicios() {
   return (
     <section className={style.servicio}>
-      <p className="sectionTitle" id="Servicios">
+      <h2 className="sectionTitle" id="Servicios">
         Servicios
-      </p>
-      <h2 className="subTitle">Nuestro Compromiso</h2>
+      </h2>
+      <h3 className="subTitle">Nuestro Compromiso</h3>
       <div className={style.container}>
         {SERVICIOS.map((servicio) => (
           <Servicio key={servicio.title} servicio={servicio} />

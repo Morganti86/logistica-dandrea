@@ -28,22 +28,6 @@
   gap: 1.5rem;
 }
 
-/* .navLinks li {
-  margin-right: 1rem;
-} */
-
-.navLinks a {
-  color: #2d2e32;
-  text-decoration: none;
-}
-
-.menuButton {
-  color: #2d2e32;
-  display: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-}
-
 .navLinks a {
   position: relative;
   text-decoration: none;
@@ -57,26 +41,44 @@
   left: 50%;
   bottom: 5px;
   width: 0;
-  height: 2px; /* Altura del subrayado */
+  height: 2px;
   background-color: #ff304d;
   transition: width 0.8s ease-in-out, left 0.8s ease-in-out;
 }
 
-/* Estilo para el subrayado al pasar el ratón */
 .navLinks a:hover::after {
   left: 15%;
   width: 70%;
 }
 
-@media (max-width: 768px) {
-  /* .navbar {
-    height: 40px;
+.navLinks a.active::after {
+  left: 15%;
+  width: 70%;
+}
+
+.menuButton {
+  color: #2d2e32;
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  padding: 0;
+  line-height: 1;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-  .logoImage {
-    height: 30px;
-  } */
-
+@media (max-width: 768px) {
   .navLinks {
     display: none;
     flex-direction: column;
@@ -95,8 +97,6 @@
       rgba(45, 46, 50, 1) 38%
     );
     color: ivory;
-    z-index: 15;
-    transition: right 3s ease-in-out;
     overflow: hidden;
   }
 
@@ -106,11 +106,18 @@
 
   .navLinks.show {
     display: flex;
+    animation: slideDown 0.25s ease-out;
   }
 
-  .navLinks.show a {
+  .navLinks.show a,
+  .navLinks.show a.active {
     text-decoration: none;
     color: #ff304d;
     font-size: 1.5rem;
+  }
+
+  .navLinks a::after,
+  .navLinks a.active::after {
+    display: none;
   }
 }

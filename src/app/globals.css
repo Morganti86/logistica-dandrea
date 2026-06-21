@@ -82,13 +82,12 @@
 html,
 body {
   max-width: 100vw;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  /* background-color: ivory; */
   background-color: #f9f9f9;
 }
 

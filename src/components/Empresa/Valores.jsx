@@ -1,7 +1,7 @@
 export function Valores() {
   return (
     <section>
-      <h2 className="subTitle">Nuestros Valores</h2>
+      <h3 className="subTitle">Nuestros Valores</h3>
       <p>
         En Logística D'ANDREA, nos diferenciamos mediante nuestro compromiso con
         la eficiencia, integridad y una constante búsqueda de innovación. Nos

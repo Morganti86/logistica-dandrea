@@ -4,3 +4,9 @@
   transform: translate(50%, 50%);
   z-index: 15;
 }
+
+@media (pointer: coarse) {
+  .mouse {
+    display: none;
+  }
+}

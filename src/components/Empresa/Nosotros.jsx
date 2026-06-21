@@ -1,7 +1,7 @@
 export function Nosotros() {
   return (
     <section>
-      <h2 className="subTitle">Sobre Nosotros</h2>
+      <h3 className="subTitle">Sobre Nosotros</h3>
       <p>
         En Logística D'ANDREA, nos especializamos en proporcionar soluciones
         logísticas integrales y eficientes en el área metropolitana de Buenos
